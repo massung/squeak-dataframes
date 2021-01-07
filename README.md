@@ -21,7 +21,7 @@ This first examples loads variant associations for Type 1 Diabetes for the gene 
 * adding multiple plots on top of each other
 
 ```smalltalk
-r := WebClient httpGet: 'https://bioindex.hugeamp.org/api/bio/query/associations?q=t1d,il2ra'.
+r := WebClient httpGet: 'https://bioindex.hugeamp.org/api/bio/query/associations?q=t2d,slc30a8'.
 
 "load a dataframe from records: a list of dictionaries"
 df := DataFrame withRecords: ((STON fromString: r content) at: 'data').
