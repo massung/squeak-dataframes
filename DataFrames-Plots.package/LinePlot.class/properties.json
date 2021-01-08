@@ -1,0 +1,14 @@
+{
+	"category" : "DataFrames-Plots",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "LinePlot",
+	"pools" : [
+		 ],
+	"super" : "Plot",
+	"type" : "normal" }

@@ -1,0 +1,5 @@
+OrderedDictionary {
+	'DataFrames-Core.package' : #SquotCypressCodeSerializer,
+	'DataFrames-CSV.package' : #SquotCypressCodeSerializer,
+	'DataFrames-Plots.package' : #SquotCypressCodeSerializer
+}

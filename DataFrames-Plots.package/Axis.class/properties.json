@@ -1,0 +1,24 @@
+{
+	"category" : "DataFrames-Plots",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"figure",
+		"series",
+		"index",
+		"ticks",
+		"ticksMorph",
+		"tickFont",
+		"tickFormat",
+		"tickRotation",
+		"label",
+		"min",
+		"max" ],
+	"name" : "Axis",
+	"pools" : [
+		 ],
+	"super" : "RectangleMorph",
+	"type" : "normal" }

@@ -1,0 +1,13 @@
+{
+	"class" : {
+		"dialect:on:" : "jm 1/4/2021 12:57",
+		"on:" : "jm 1/4/2021 12:58" },
+	"instance" : {
+		"header" : "jm 12/28/2020 22:39",
+		"initializeWithDialect:on:" : "jm 1/3/2021 22:27",
+		"nextField" : "jm 1/3/2021 22:26",
+		"nextLine" : "jm 1/4/2021 13:35",
+		"nextRow" : "jm 1/4/2021 13:35",
+		"readColumns" : "jm 1/4/2021 14:26",
+		"readHeader" : "jm 12/28/2020 15:23",
+		"rowStream" : "jm 1/3/2021 20:40" } }

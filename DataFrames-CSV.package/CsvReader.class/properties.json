@@ -1,0 +1,20 @@
+{
+	"category" : "DataFrames-CSV",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"dialect",
+		"stream",
+		"last",
+		"header",
+		"rowBuffer",
+		"fieldBuffer",
+		"fieldDelimiters" ],
+	"name" : "CsvReader",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

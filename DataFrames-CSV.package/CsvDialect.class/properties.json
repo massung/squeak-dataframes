@@ -1,0 +1,24 @@
+{
+	"category" : "DataFrames-CSV",
+	"classinstvars" : [
+		"commentChar" ],
+	"classvars" : [
+		"Default",
+		"TSV" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sepChar",
+		"lineChar",
+		"quoteChar",
+		"escapeChar",
+		"commentChar",
+		"arrayChar",
+		"assocChar",
+		"doubleQuote",
+		"naValues",
+		"naRep" ],
+	"name" : "CsvDialect",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

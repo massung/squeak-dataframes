@@ -1,0 +1,15 @@
+{
+	"category" : "DataFrames-Plots",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"value",
+		"label" ],
+	"name" : "FixedLinePlot",
+	"pools" : [
+		 ],
+	"super" : "Plot",
+	"type" : "normal" }

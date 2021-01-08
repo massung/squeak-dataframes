@@ -1,0 +1,26 @@
+{
+	"class" : {
+		"default" : "jm 12/23/2020 11:35",
+		"tabSeparated" : "jm 12/24/2020 13:57" },
+	"instance" : {
+		"associationSeparator" : "jm 12/23/2020 10:57",
+		"associationSeparator:" : "jm 12/23/2020 10:57",
+		"collectionSeparator" : "jm 12/23/2020 10:54",
+		"collectionSeparator:" : "jm 12/23/2020 10:54",
+		"commentCharacter" : "jm 12/23/2020 10:56",
+		"commentCharacter:" : "jm 12/23/2020 10:55",
+		"doubleQuote" : "jm 12/23/2020 11:53",
+		"doubleQuote:" : "jm 12/23/2020 11:52",
+		"escapeCharacter" : "jm 12/28/2020 16:26",
+		"escapeCharacter:" : "jm 12/28/2020 16:26",
+		"fieldSeparator" : "jm 12/23/2020 10:53",
+		"fieldSeparator:" : "jm 12/23/2020 10:53",
+		"initialize" : "jm 12/29/2020 10:51",
+		"lineSeparator" : "jm 12/23/2020 10:53",
+		"lineSeparator:" : "jm 12/23/2020 10:53",
+		"naRep" : "jm 12/29/2020 10:44",
+		"naRep:" : "jm 12/29/2020 10:44",
+		"naValues" : "jm 12/29/2020 10:43",
+		"naValues:" : "jm 12/29/2020 10:43",
+		"quoteCharacter" : "jm 12/23/2020 10:55",
+		"quoteCharacter:" : "jm 12/23/2020 10:55" } }

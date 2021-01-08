@@ -1,0 +1,14 @@
+{
+	"category" : "DataFrames-Plots",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"figure" ],
+	"name" : "Plot",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

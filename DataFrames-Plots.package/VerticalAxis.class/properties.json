@@ -1,0 +1,14 @@
+{
+	"category" : "DataFrames-Plots",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "VerticalAxis",
+	"pools" : [
+		 ],
+	"super" : "Axis",
+	"type" : "normal" }

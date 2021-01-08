@@ -1,0 +1,16 @@
+{
+	"category" : "DataFrames-CSV",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"dialect",
+		"stream",
+		"writingCollection" ],
+	"name" : "CsvWriter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

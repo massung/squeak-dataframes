@@ -1,0 +1,14 @@
+{
+	"category" : "DataFrames-Plots",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BarPlot",
+	"pools" : [
+		 ],
+	"super" : "Plot",
+	"type" : "normal" }

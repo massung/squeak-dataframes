@@ -1,0 +1,14 @@
+{
+	"category" : "DataFrames-Plots",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "HLinePlot",
+	"pools" : [
+		 ],
+	"super" : "FixedLinePlot",
+	"type" : "normal" }

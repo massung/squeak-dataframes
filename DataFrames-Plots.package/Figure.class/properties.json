@@ -1,0 +1,17 @@
+{
+	"category" : "DataFrames-Plots",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"df",
+		"x",
+		"y",
+		"plots" ],
+	"name" : "Figure",
+	"pools" : [
+		 ],
+	"super" : "RectangleMorph",
+	"type" : "variable" }

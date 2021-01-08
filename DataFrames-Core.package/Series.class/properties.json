@@ -1,0 +1,15 @@
+{
+	"category" : "DataFrames-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"values",
+		"recordIndex" ],
+	"name" : "Series",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "variable" }

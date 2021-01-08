@@ -1,0 +1,15 @@
+{
+	"category" : "DataFrames-Plots",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"size",
+		"colors" ],
+	"name" : "ScatterPlot",
+	"pools" : [
+		 ],
+	"super" : "Plot",
+	"type" : "normal" }
