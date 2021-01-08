@@ -66,7 +66,7 @@ This example loads a small (~20k) CSV file that lists books by title, author, ge
 df := DataFrame fromCsv: CsvDialect default fileNamed: 'books.csv'.
 
 "create a new frame, selecting columns and aggregating by key"
-counts := (df cut: #(PubAuthor Title)) reduce: [:series | series size] groupedBy: #PubAuthor.
+counts := (df cut: #(Publisher Title)) reduce: [:series | series size] groupedBy: #Publisher.
 
 "build and show the plot"
 fig := Figure new dataFrame: counts.
