@@ -11,7 +11,7 @@ While not as extensive as Pandas, it is on-par performance wise with many Pandas
 Use Monticello from within a Workspace:
 
 ```smalltalk
-Moticello new
+Metacello new
     baseline: 'DataFrames';
     repository: 'github://massung/squeak-dataframes:main/src';
     load.
