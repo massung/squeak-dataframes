@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfDataFrames",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfDataFrames",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
