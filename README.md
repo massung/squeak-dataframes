@@ -83,7 +83,7 @@ counts := (df cut: #(Publisher Title)) reduce: [:series | series size] groupedBy
 fig := Figure new dataFrame: counts.
 
 "setup axes"
-fig x column: #Publisher; tickRotation: -90.
+fig x column: #Publisher; tickOrientation: #vertical.
 fig y column: #Title; label: 'Number of Titles'; from: 0.
 
 "add plots"
