@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"build" : "jm 1/7/2021 10:48",
+		"build" : "jm 1/10/2021 16:24",
 		"drawTick:at:on:" : "jm 1/7/2021 13:11",
 		"initializeOnFigure:" : "jm 1/6/2021 10:05",
 		"pointAt:" : "jm 1/7/2021 15:05" } }

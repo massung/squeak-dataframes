@@ -9,7 +9,7 @@ initializeOnFigure: aFigure
 	ticks := Dictionary new.
 	tickFont := StrikeFont familyName: (label fontToUse familyName) size: (label fontToUse pointSize // 2).
 	tickFormat := nil.
-	tickRotation := 0.
+	tickOrientation := #horizontal.
 	
 	"where the label is framed"
 	ticksMorph := RectangleMorph new

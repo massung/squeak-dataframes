@@ -13,7 +13,7 @@ drawTick: key at: value on: aCanvas
 	aCanvas line: tickPos to: tickPos - (0 @ 5) width: 1 color: Color gray.
 	
 	"draw the tick label"
-	tickRotation = 0
+	tickOrientation = #horizontal
 		ifTrue: [
 			| labelPos |
 			
@@ -32,7 +32,7 @@ drawTick: key at: value on: aCanvas
 			clipRect := tickPos + (tickFont height // -2 @ 2) extent: (tickFont height @ w).
 			transform := MatrixTransform2x3 identity
 				setOffset: clipRect bottomLeft;
-				setAngle: tickRotation.
+				setAngle: -90.
 			
 			aCanvas transformBy: transform clippingTo: clipRect during: [:form |
 				form

@@ -45,7 +45,7 @@ build
 		ifNotEmpty: [(ticks keys collect: [:key | tickFont widthOfString: (self formatTick: key)]) max].
 		
 	"calculate the widest tick after rotation"
-	tickWidth := tickMaxWidth * tickRotation degreesToRadians cos abs max: tickFont height.
+	tickWidth := tickMaxWidth * self tickRotation cos abs max: tickFont height.
 	
 	"calculate the new width/height of the axis"
 	self width: 10 + tickWidth + label fontToUse height

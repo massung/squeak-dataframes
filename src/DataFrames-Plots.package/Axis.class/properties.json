@@ -13,7 +13,7 @@
 		"ticksMorph",
 		"tickFont",
 		"tickFormat",
-		"tickRotation",
+		"tickOrientation",
 		"label",
 		"min",
 		"max" ],
