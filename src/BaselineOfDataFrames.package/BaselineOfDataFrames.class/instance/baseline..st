@@ -5,6 +5,6 @@ baseline: spec
 	spec for: #common do: [
 		spec
 			package: 'DataFrames-CSV';
-			package: 'DataFrames-Core' with: [spec requires: #('DataFrames-CSV' 'Ston')];
+			package: 'DataFrames-Core' with: [spec requires: #('DataFrames-CSV' 'STON')];
 			package: 'DataFrames-Plots' with: [spec requires: #('DataFrames-Core')]
 	]
