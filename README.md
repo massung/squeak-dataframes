@@ -6,6 +6,17 @@ It's still in the early stages, but is already quite capable. It makes heavy reu
 
 While not as extensive as Pandas, it is on-par performance wise with many Pandas operations and only slighly slower in others. There are a couple areas where it is much slower (most notably on data loading/writing) and others where it is notably faster due to implementation decisions made on what not to support.
 
+## Installing
+
+Use Monticello from within a Workspace:
+
+```smalltalk
+Moticello new
+    baseline: 'DataFrames';
+    repository: 'github://massung/squeak-dataframes:main/src';
+    load.
+```
+
 ## Examples
 
 Below are some simple examples of use along with performance numbers on my home machine.
@@ -112,7 +123,7 @@ Some quick examples of the above:
 
 ```smalltalk
 "who is the the most prolific author in our list?"
-(df secondaryIndex #Author) mode
+(df secondaryIndex: #Author) mode
 
 "remove any records with missing fields"
 df dropNA

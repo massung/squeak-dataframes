@@ -1,6 +1,6 @@
 OrderedDictionary {
-	'DataFrames-Core.package' : #SquotCypressCodeSerializer,
-	'DataFrames-CSV.package' : #SquotCypressCodeSerializer,
-	'DataFrames-Plots.package' : #SquotCypressCodeSerializer,
-	'BaselineOfDataFrames.package' : #SquotCypressCodeSerializer
+	'src/BaselineOfDataFrames.package' : #SquotCypressCodeSerializer,
+	'src/DataFrames-Core.package' : #SquotCypressCodeSerializer,
+	'src/DataFrames-CSV.package' : #SquotCypressCodeSerializer,
+	'src/DataFrames-Plots.package' : #SquotCypressCodeSerializer
 }
