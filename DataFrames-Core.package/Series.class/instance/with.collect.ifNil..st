@@ -7,7 +7,7 @@ with: other collect: aBlock ifNil: nilBlock
 		ifTrue: [
 			| xs x y |
 		
-			xs := recordIndex withIndexCollect: [:rowIndex :i |
+			xs := primaryIndex withIndexCollect: [:rowIndex :i |
 				x := values at: rowIndex.
 				y := other at: i.
 			
@@ -16,5 +16,5 @@ with: other collect: aBlock ifNil: nilBlock
 					ifFalse: nilBlock
 			].
 	
-			^Series values: xs index: recordIndex
+			^Series values: xs index: primaryIndex
 		]

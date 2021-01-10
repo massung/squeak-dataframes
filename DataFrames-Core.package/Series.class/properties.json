@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"values",
-		"recordIndex" ],
+		"primaryIndex" ],
 	"name" : "Series",
 	"pools" : [
 		 ],

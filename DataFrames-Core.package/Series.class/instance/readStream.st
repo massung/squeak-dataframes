@@ -3,5 +3,5 @@ readStream
 	"Returns this series as a stream of row indexes."
 	
 	^Generator on: [:g |
-		recordIndex do: [:row | g yield: (values at: row)]
+		primaryIndex do: [:row | g yield: (values at: row)]
 	]

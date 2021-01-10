@@ -4,14 +4,14 @@ reduce: aBlock
 	
 	| i acc x |
 	
-	(i := recordIndex findFirst: [:rowIndex | (values at: rowIndex) notNil]) = 0
+	(i := primaryIndex findFirst: [:rowIndex | (values at: rowIndex) notNil]) = 0
 		ifTrue: [^nil].
 	
 	"initial value"
-	acc := values at: (recordIndex at: i).
+	acc := values at: (primaryIndex at: i).
 	
 	"apply the rest of the index"
-	i+1 to: recordIndex size do: [:row |
+	i+1 to: primaryIndex size do: [:row |
 		acc := (x := values at: row)
 			ifNotNil: [aBlock value: acc value: x]
 			ifNil: [acc]

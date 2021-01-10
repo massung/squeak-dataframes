@@ -4,7 +4,7 @@ sorted: aBlock
 	
 	| sortedIndex x y |
 	
-	sortedIndex := recordIndex sorted: [:a :b |
+	sortedIndex := primaryIndex sorted: [:a :b |
 		x := values at: a.
 		y := values at: b.
 		
@@ -13,3 +13,4 @@ sorted: aBlock
 	].
 	
 	^Series values: values index: sortedIndex
+	

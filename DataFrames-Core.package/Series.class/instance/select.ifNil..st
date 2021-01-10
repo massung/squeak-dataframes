@@ -5,7 +5,7 @@ select: aBlock ifNil: nilBlock
 	| x selected |
 	
 	selected := Array streamContents: [:i |
-		recordIndex do: [:row |
+		primaryIndex do: [:row |
 			((x := values at: row)	ifNotNil: [aBlock value: x] ifNil: [nilBlock value])
 				ifTrue: [i nextPut: row]
 		]

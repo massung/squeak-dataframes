@@ -4,10 +4,10 @@ collect: aBlock ifNil: nilBlock
 
 	| xs x |
 	
-	xs := recordIndex collect: [:rowIndex | 
+	xs := primaryIndex collect: [:rowIndex | 
 		(x := values at: rowIndex)
 			ifNotNil: [aBlock value: x]
 			ifNil: [nilBlock value]
 	].
 
-	^Series values: xs index: recordIndex
+	^Series values: xs index: primaryIndex

@@ -8,7 +8,7 @@ rank
 	n := 0.
 	
 	"records with the same value have the same rank"
-	ranks := recordIndex collect: [:rowIndex |
+	ranks := primaryIndex collect: [:rowIndex |
 		(x := values at: rowIndex) = last
 			ifTrue: [n]
 			ifFalse: [
@@ -17,4 +17,5 @@ rank
 			].
 	].
 	
-	^Series values: ranks index: recordIndex
+	^Series values: ranks index: primaryIndex
+	

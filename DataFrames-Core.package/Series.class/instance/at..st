@@ -1,4 +1,4 @@
 as yet unclassified
-at: row
+at: rowIndex
 
-	^values at: (recordIndex at: row)
+	^values at: (primaryIndex at: rowIndex)

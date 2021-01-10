@@ -4,8 +4,8 @@ do: aBlock ifNil: nilBlock
 
 	| x |
 
-	recordIndex do: [:row | 
-		(x := values at: row)
+	primaryIndex do: [:rowIndex | 
+		(x := values at: rowIndex)
 			ifNil: nilBlock
 			ifNotNil: [aBlock value: x]
 	]

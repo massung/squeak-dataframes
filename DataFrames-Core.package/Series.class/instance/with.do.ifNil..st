@@ -7,7 +7,7 @@ with: other do: aBlock ifNil: nilBlock
 		ifTrue: [
 			| x y |
 			
-			recordIndex withIndexDo: [:rowIndex :i |
+			primaryIndex withIndexDo: [:rowIndex :i |
 				x := values at: rowIndex.
 				y := other at: i.
 				
