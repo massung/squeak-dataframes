@@ -2,44 +2,29 @@ as yet unclassified
 build
 	"Builds the tick marks so they may be drawn."
 
-	| lo hi step halfStep value tickHeight tickMaxWidth |
+	| lo hi range tickHeight tickMaxWidth |
 	
-	lo := min ifNil: [index first].
-	hi := max ifNil: [index last].
+	lo := min ifNil: [index keys first].
+	hi := max ifNil: [index keys last].
 	
 	"if these are magnitudes, then we calculate steps"
-	((lo isKindOf: Magnitude) and: (hi isKindOf: Magnitude))
+	(lo respondsTo: #to:steps:clamp:)
+		ifFalse: [super build]
 		ifTrue: [
-			step := 10 ** ((hi - lo) log rounded - 1).
-			halfStep := step / 2.
-			
-			"the initial tick is at the first rounded step"
-			value := lo + step // step * step.
-			
-			"increase the step so there are only 4-5 ticks on the axis"
-			step := hi - value // step / 5 * step + halfStep // halfStep * halfStep.
-			
-			"generate ticks for each step"
-			[ticks at: value put: value] doWhileTrue: [
-				(value := value + step) <= (hi + halfStep)
+			ticks := (range := lo to: hi steps: 5 clamp: false) collect: [:value |
+				value -> value
 			].
 		
-			"set the bounds of the axis"
-			self from: lo; to: hi
-		]
-		
-		"enumerated ticks"
-		ifFalse: [
-			index withIndexDo: [:key :i | ticks at: key put: i].
-			
-			"the index of the key indicates the position along the axis"
-			self from: 1; to: index size.
+			self from: range first; to: hi
 		].
 
 	"find the width of the longest tick label"
 	tickMaxWidth := ticks
 		ifEmpty: [0]
-		ifNotEmpty: [(ticks keys collect: [:key | tickFont widthOfString: (self formatTick: key)]) max].
+		ifNotEmpty: [
+			(ticks collect: [:assoc | tickFont widthOfString: (self formatTick: assoc key)])
+				max
+		].
 	
 	"calculate the longest tick width and the maximum height (after rotation)"
 	tickHeight := tickMaxWidth * self tickRotation sin abs max: tickFont height.

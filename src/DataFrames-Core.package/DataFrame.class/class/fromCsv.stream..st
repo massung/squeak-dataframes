@@ -8,4 +8,4 @@ fromCsv: aCsvDialect stream: stream
 		readHeader.
 	
 	"read all the columns"
-	^DataFrame withColumns: reader readColumns
+	^DataFrame columns: reader readColumns

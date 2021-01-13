@@ -1,4 +1,4 @@
 as yet unclassified
-withRows: rows
+rows: rows
 
 	^self new initializeWithRows: rows

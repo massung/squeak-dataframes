@@ -6,8 +6,4 @@ at: key ifAbsent: aBlock
 	
 	^(index := self indexOfKey: key) = 0
 		ifTrue: [aBlock value]
-		ifFalse: [
-			Generator on: [:g |
-				(indexes at: index) do: [:x | g nextPut: x]
-			]
-		]
+		ifFalse: [indexes at: index]

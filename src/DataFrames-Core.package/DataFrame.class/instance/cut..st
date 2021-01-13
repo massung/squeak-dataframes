@@ -8,4 +8,4 @@ cut: columns
 		column -> (self at: column)
 	].
 	
-	^DataFrame withColumns: associations
+	^DataFrame columns: associations

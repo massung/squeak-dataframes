@@ -1,4 +1,4 @@
 as yet unclassified
-withColumns: columns
+columns: columns
 
 	^self new initializeWithColumns: columns

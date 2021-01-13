@@ -2,13 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"build" : "jm 1/6/2021 09:24",
-		"column:" : "jm 1/7/2021 15:33",
-		"drawOn:" : "jm 1/7/2021 10:45",
+		"build" : "jm 1/13/2021 08:27",
+		"column:" : "jm 1/13/2021 08:22",
+		"drawOn:" : "jm 1/13/2021 08:22",
 		"formatTick:" : "jm 1/5/2021 16:33",
-		"fractionOf:" : "jm 1/7/2021 14:29",
+		"fractionOf:" : "jm 1/13/2021 08:37",
 		"from:" : "jm 1/5/2021 14:14",
-		"initializeOnFigure:" : "jm 1/10/2021 16:18",
+		"initializeOnFigure:" : "jm 1/13/2021 08:20",
 		"label:" : "jm 1/4/2021 16:47",
 		"max" : "jm 1/4/2021 17:10",
 		"min" : "jm 1/4/2021 17:10",
@@ -18,5 +18,5 @@
 		"tickOrientation:" : "jm 1/10/2021 16:22",
 		"tickRotation" : "jm 1/10/2021 16:24",
 		"ticks" : "jm 1/5/2021 15:06",
-		"ticks:" : "jm 1/5/2021 10:30",
+		"ticks:" : "jm 1/13/2021 08:22",
 		"to:" : "jm 1/5/2021 14:13" } }

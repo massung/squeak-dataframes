@@ -22,5 +22,5 @@ reduce: aBlock groupedBy: primaryColumn
 		columns at: i + 1 put: column -> data
 	].
 
-	^DataFrame withColumns: columns
+	^DataFrame columns: columns
 	

@@ -6,10 +6,10 @@ initializeOnFigure: aFigure
 	
 	figure := aFigure.
 	label := StringMorph new.
-	ticks := Dictionary new.
+	ticks := Array new.
 	tickFont := StrikeFont familyName: (label fontToUse familyName) size: (label fontToUse pointSize // 2).
-	tickFormat := nil.
 	tickOrientation := #horizontal.
+	tickFormat := nil.
 	
 	"where the label is framed"
 	ticksMorph := RectangleMorph new

@@ -1,4 +1,4 @@
 as yet unclassified
-withRecords: records
+records: records
 
 	^self new initializeWithRecords: records
