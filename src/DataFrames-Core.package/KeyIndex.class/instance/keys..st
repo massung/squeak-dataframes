@@ -20,7 +20,12 @@ keys: anArray
 	"sort the key/value associations"
 	associations := map associations sort: [:a :b | a key < b key].
 	
-	"split them into keys and indexes"
-	keys := associations collect: [:assoc | assoc key].
-	indexes := associations collect: [:assoc | assoc value contents]
+	"create the key and index lists"
+	keys := Array new: associations size.
+	indexes := Array new: associations size.
 	
+	"split them into keys and indexes"
+	associations withIndexDo: [:assoc :i |
+		keys at: i put: assoc key.
+		indexes at: i put: assoc value contents.
+	]
