@@ -6,7 +6,7 @@ keys: anArray
 	
 	map := Dictionary new.
 	
-	"build the map of value -> index list"
+	"build the map of value -> index stream"
 	anArray withIndexDo: [:value :i |
 		value ifNotNil: [
 			(value respondsTo: #<=) ifFalse: [

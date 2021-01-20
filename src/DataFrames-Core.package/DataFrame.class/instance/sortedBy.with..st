@@ -7,7 +7,4 @@ sortedBy: column with: aBlock
 	series := self at: column.
 	sorted := series sorted: aBlock.
 	
-	^DataFrame new 
-		initializeWithData: columnData
-		columns: columnNames 
-		index: sorted primaryIndex
+	^self copyWithIndex: sorted primaryIndex

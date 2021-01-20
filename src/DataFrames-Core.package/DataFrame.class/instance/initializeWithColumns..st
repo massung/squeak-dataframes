@@ -12,4 +12,8 @@ initializeWithColumns: columns
 		ifFalse: [columns].
 	
 	"allow for just a list of keys and no data"
-	associations do: [:assoc | self at: assoc key put: assoc value]
+	associations withIndexDo: [:column :i |
+		(column isKindOf: Association)
+			ifTrue: [self at: column key put: column value]
+			ifFalse: [self at: i put: column]
+	]	

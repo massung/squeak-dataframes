@@ -8,4 +8,4 @@ dropNA
 		columnData allSatisfy: [:column | (column at: index) notNil]
 	].
 
-	^DataFrame new initializeWithData: columnData columns: columnNames index: selected
+	^self copyWithIndex: selected

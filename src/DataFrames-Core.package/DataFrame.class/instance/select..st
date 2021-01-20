@@ -10,4 +10,4 @@ select: aSeries
 		]
 	].
 	
-	^DataFrame new initializeWithData: columnData columns: columnNames index: selected
+	^self copyWithIndex: selected

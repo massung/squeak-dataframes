@@ -10,7 +10,7 @@ unionAll: others
 	others do: [:df | columns := columns union: df columns].
 	
 	"create a new frame, copying data from this and the other frame"
-	^(DataFrame new initializeWithColumnNames: columns sorted) streamRecords: [:stream |
+	^(DataFrame new initializeWithHeader: columns sorted) streamRecords: [:stream |
 		self recordsDo: [:record | stream nextPut: record].
 		
 		others do: [:df |

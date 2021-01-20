@@ -19,5 +19,5 @@ dropDuplicate: column keep: keep
 		]
 	].
 
-	^DataFrame new initializeWithData: columnData columns: columnNames index: selected
+	^self copyWithIndex: selected
 	
