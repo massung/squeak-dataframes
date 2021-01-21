@@ -1,5 +1,5 @@
 as yet unclassified
-data
+values
 	"Returns the array of raw column data."
 	
-	^columnData
+	^columnValues

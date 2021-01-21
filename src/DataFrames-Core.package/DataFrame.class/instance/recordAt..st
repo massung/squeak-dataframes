@@ -8,7 +8,7 @@ recordAt: index
 	record := Dictionary new.
 	
 	columnNames withIndexDo: [:column :i |
-		record at: column put: ((columnData at: i) at: rowIndex)
+		record at: column put: ((columnValues at: i) at: rowIndex)
 	].
 
 	^record

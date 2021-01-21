@@ -5,7 +5,7 @@ addRecords: aStream
 	| columns index |
 	
 	"special case: handle first ever row, which identifies the number of columns"
-	columns := columnData collect: [:data | WriteStream with: data].
+	columns := columnValues collect: [:data | WriteStream with: data].
 		
 	"build the record index"
 	index := WriteStream with: primaryIndex.
@@ -35,7 +35,7 @@ addRecords: aStream
 	].
 
 	"update the frame data"
-	columnData := columns collect: [:stream |
+	columnValues := columns collect: [:stream |
 		stream position < index position
 			ifTrue: [stream contents , (Array new: index position - stream position)]
 			ifFalse: [stream contents]

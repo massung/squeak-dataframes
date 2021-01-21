@@ -5,6 +5,6 @@ at: column ifAbsent: aBlock
 	| data index |
 	
 	index := self indexOfColumn: column ifAbsent: [^aBlock value].
-	data := columnData at: index ifAbsent: [^aBlock value].
+	data := columnValues at: index ifAbsent: [^aBlock value].
 	
 	^Series values: data index: primaryIndex

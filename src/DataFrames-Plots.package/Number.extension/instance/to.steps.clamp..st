@@ -10,13 +10,7 @@ to: stop steps: n clamp: clamp
 	
 	"set the initial starting value"
 	start := self.
-	steps := n.
-	
-	"the initial tick is at the first rounded step after the this value"
-	clamp ifFalse: [
-		start := start - step // step * step.
-		steps := steps - 1
-	].
+	steps := n - 1.
 	
 	"increase the step so there are n steps on the axis"
 	step := stop - start // step / steps * step + halfStep // halfStep * halfStep.
@@ -24,7 +18,7 @@ to: stop steps: n clamp: clamp
 	"optionally clamp the extents"
 	interval := clamp
 		ifTrue: [start to: stop by: step]
-		ifFalse: [start to: stop + step // step * step by: step].
+		ifFalse: [start // step * step to: stop + step // step * step by: step].
 		
 	^interval asArray
 	

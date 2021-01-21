@@ -4,7 +4,7 @@ indexOfColumn: column ifAbsent: aBlock
 
 	| index |
 	
-	^(column isInteger and: [column between: 1 and: columnData size])
+	^(column isInteger and: [column between: 1 and: columnValues size])
 		ifTrue: [column]
 		ifFalse: [
 			(index := columnNames indexOf: column) > 0

@@ -16,7 +16,7 @@ reduce: aBlock groupedBy: primaryColumn
 		
 		"evaluate the column for every key"
 		data := keyIndex collect: [:key :rowIndexes |
-			aBlock value: (Series values: (columnData at: i + 1) index: rowIndexes)
+			aBlock value: (Series values: (columnValues at: i + 1) index: rowIndexes)
 		].
 		
 		columns at: i + 1 put: column -> data

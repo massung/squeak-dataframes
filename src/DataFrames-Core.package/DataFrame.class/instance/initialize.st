@@ -2,7 +2,7 @@ as yet unclassified
 initialize
 
 	columnNames := #().
-	columnData := #().
+	columnValues := #().
 	primaryIndex := #().
 	secondaryIndexes := Dictionary new.
 	

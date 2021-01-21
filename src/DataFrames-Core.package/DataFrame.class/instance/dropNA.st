@@ -5,7 +5,7 @@ dropNA
 	| selected |
 	
 	selected := primaryIndex select: [:index |
-		columnData allSatisfy: [:column | (column at: index) notNil]
+		columnValues allSatisfy: [:column | (column at: index) notNil]
 	].
 
 	^self copyWithIndex: selected

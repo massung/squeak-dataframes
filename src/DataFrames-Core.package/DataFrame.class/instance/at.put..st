@@ -22,7 +22,7 @@ at: column put: seriesOrArray
 	
 	"new columns to the end"
 	index := self indexOfColumn: column ifAbsent: [
-		columnData := columnData , (Array with: #()).
+		columnValues := columnValues , (Array with: #()).
 		
 		"append the column name"
 		columnNames := columnNames , (Array with: column).
@@ -30,5 +30,5 @@ at: column put: seriesOrArray
 	].
 
 	"write the data"
-	columnData at: index put: data
+	columnValues at: index put: data
 	
